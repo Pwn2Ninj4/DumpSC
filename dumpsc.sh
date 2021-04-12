@@ -13,6 +13,7 @@ end="\033[0m"
 BIN=$1
 
 apt-get install xclip &> /dev/null
+apt-get install binutils &> /dev/null
 
 if [ -n "$1" ]; then
 
