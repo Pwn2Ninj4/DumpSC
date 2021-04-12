@@ -28,6 +28,6 @@ if [ -n "$1" ]; then
 
 else
 
-    echo -e "${red}[!]${end}${green}Usage: bash dumpsc <binary>${end}"
+    echo -e "${red}[!]${end}${green}Usage: bash dumpsc.sh <binary>${end}"
 
 fi
